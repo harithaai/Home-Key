@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flat Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Flat Options</h2>
+
+    <button onclick="goFlatSaleOption()">Flat for Sale</button><br><br>
+    <button onclick="goFlatRent()">Flat for Rent</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flat Rent Owner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Add Flat for Rent</h2>
+
+    <input type="text" id="ownerName" placeholder="Owner Name"><br><br>
+    <input type="text" id="area" placeholder="Location"><br><br>
+    <input type="number" id="rent" placeholder="Rent Amount"><br><br>
+    <input type="text" id="type" placeholder="Flat Type"><br><br>
+    <input type="text" id="facing" placeholder="Facing"><br><br>
+    <input type="text" id="contact" placeholder="Contact"><br><br>
+    <input type="file" id="image"><br><br>
+
+    <button onclick="submitFlatRent()">Submit</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flat Rent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Flat for Rent</h2>
+
+    <button onclick="goFlatRentOwner()">Owner</button>
+    <button onclick="goFlatTenant()">Tenant</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flat for Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Add Flat for Sale</h2>
+
+    <input type="text" id="ownerName" placeholder="Owner Name"><br><br>
+    <input type="text" id="area" placeholder="Area"><br><br>
+    <input type="number" id="price" placeholder="Flat Price"><br><br>
+    <input type="text" id="type" placeholder="Flat Type (2BHK/3BHK)"><br><br>
+    <input type="text" id="facing" placeholder="Facing"><br><br>
+    <input type="text" id="contact" placeholder="Contact Number"><br><br>
+    <input type="file" id="image" accept="image/*"><br><br>
+
+    <button onclick="submitFlat()">Submit</button>
+
+    <h3>Available Flats</h3>
+    <div id="flatResult"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flat Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Flat for Sale</h2>
+
+    <button onclick="goFlatOwner()">Owner</button>
+    <button onclick="goFlatBuyer()">Buyer</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flat Tenant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Available Flats for Rent</h2>
+
+    <div id="flatRentResult"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Land for Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Land for Sale</h2>
+    <p>Coming Soon - You can add and view lands here</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Welcome to Real Estate Portal</h2>
+    <button onclick="goRole()">Enter</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Owner Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Add House for Rent</h2>
+
+    <input type="text" id="ownerName" placeholder="Owner Name"><br><br>
+    <input type="text" id="area" placeholder="Area"><br><br>
+    <input type="number" id="rent" placeholder="Rent Amount"><br><br>
+    <input type="text" id="type" placeholder="House Type (1BHK/2BHK)"><br><br>
+    <input type="text" id="facing" placeholder="Facing"><br><br>
+    <input type="text" id="contact" placeholder="Contact Number"><br><br>
+    <input type="file" id="image" accept="image/*"><br><br>
+
+    <button onclick="submitOwner()">Submit</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House for Rent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>House for Rent</h2>
+
+    <button onclick="goOwner()">Owner</button>
+    <button onclick="goTenant()">Tenant</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Property Type</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Select Property Type</h2>
+
+    <button onclick="goRent()">House for Rent</button><br><br>
+    <button onclick="goFlatSale()">Flat for Sale</button><br><br>
+    <button onclick="goLandSale()">Land for Sale</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+// ===================== HOUSE STORAGE =====================
+let houses = JSON.parse(localStorage.getItem("houses")) || [];
+
+// ===================== NAVIGATION =====================
+function goRole() {
+    window.location.href = "role.html";
+}
+
+function goRent() {
+    window.location.href = "rent.html";
+}
+
+function goOwner() {
+    window.location.href = "owner.html";
+}
+
+function goTenant() {
+    window.location.href = "tenant.html";
+}
+
+function goFlatSale() {
+    window.location.href = "flat-main.html";
+}
+
+function goFlatRent() {
+    window.location.href = "flat-rent-role.html";
+}
+
+function goFlatRentOwner() {
+    window.location.href = "flat-rent-owner.html";
+}
+
+function goFlatTenant() {
+    window.location.href = "flat-tenant.html";
+}
+
+function goFlatSaleOption() {
+    window.location.href = "flatsale-role.html";
+}
+
+function goLandSale() {
+    window.location.href = "landsale.html";
+}
+
+// ===================== ADD HOUSE =====================
+function submitOwner() {
+
+    let ownerName = document.getElementById("ownerName").value;
+    let area = document.getElementById("area").value;
+    let rent = document.getElementById("rent").value;
+    let type = document.getElementById("type").value;
+    let facing = document.getElementById("facing").value;
+    let contact = document.getElementById("contact").value;
+    let imageFile = document.getElementById("image").files[0];
+
+    if (!ownerName || !area || !rent || !type || !facing || !contact) {
+        alert("Please fill all details");
+        return;
+    }
+
+    if (!imageFile) {
+        alert("Please select image");
+        return;
+    }
+
+    let reader = new FileReader();
+
+    reader.onload = function (e) {
+
+        let house = {
+            ownerName,
+            area,
+            rent: parseInt(rent),
+            type,
+            facing,
+            contact,
+            image: e.target.result
+        };
+
+        houses.push(house);
+        localStorage.setItem("houses", JSON.stringify(houses));
+
+        alert("House Added Successfully!");
+    };
+
+    reader.readAsDataURL(imageFile);
+}
+
+// ===================== DISPLAY HOUSE =====================
+function displayHouses(searchArea = "") {
+
+    let result = "";
+
+    for (let i = 0; i < houses.length; i++) {
+
+        if (searchArea === "" || houses[i].area.toLowerCase().includes(searchArea)) {
+
+            result +=
+                "<div style='border:1px solid #ddd;padding:10px;margin:10px;background:white;border-radius:8px'>" +
+                "<img src='" + houses[i].image + "' width='100%' height='150' style='object-fit:cover'><br><br>" +
+                "<b>Owner:</b> " + houses[i].ownerName + "<br>" +
+                "<b>Area:</b> " + houses[i].area + "<br>" +
+                "<b>Rent:</b> ₹" + houses[i].rent + "<br>" +
+                "<b>Type:</b> " + houses[i].type + "<br>" +
+                "<b>Facing:</b> " + houses[i].facing + "<br>" +
+                "<b>Contact:</b> " + houses[i].contact +
+                "</div>";
+        }
+    }
+
+    if (result === "") {
+        result = "<p>No houses available</p>";
+    }
+
+    let resultDiv = document.getElementById("result");
+    if (resultDiv) {
+        resultDiv.innerHTML = result;
+    }
+}
+
+// SEARCH
+function searchHouse() {
+    let searchArea = document.getElementById("searchArea").value.toLowerCase();
+    displayHouses(searchArea);
+}
+
+// AUTO LOAD TENANT
+if (window.location.pathname.includes("tenant.html")) {
+    displayHouses();
+}
+
+
+// ===================== FLAT SALE =====================
+let flats = JSON.parse(localStorage.getItem("flats")) || [];
+
+// ADD FLAT
+function submitFlat() {
+
+    let ownerName = document.getElementById("ownerName").value;
+    let area = document.getElementById("area").value;
+    let price = document.getElementById("price").value;
+    let type = document.getElementById("type").value;
+    let facing = document.getElementById("facing").value;
+    let contact = document.getElementById("contact").value;
+    let imageFile = document.getElementById("image").files[0];
+
+    if (!ownerName || !area || !price || !type || !facing || !contact) {
+        alert("Fill all details");
+        return;
+    }
+
+    if (!imageFile) {
+        alert("Select image");
+        return;
+    }
+
+    let reader = new FileReader();
+
+    reader.onload = function (e) {
+
+        let flat = {
+            ownerName,
+            area,
+            price: parseInt(price),
+            type,
+            facing,
+            contact,
+            image: e.target.result
+        };
+
+        flats.push(flat);
+        localStorage.setItem("flats", JSON.stringify(flats));
+
+        alert("Flat Added Successfully!");
+    };
+
+    reader.readAsDataURL(imageFile);
+}
+
+// DISPLAY FLATS
+function displayFlats() {
+
+    let result = "";
+
+    for (let i = 0; i < flats.length; i++) {
+
+        result +=
+            "<div style='border:1px solid #ddd;padding:10px;margin:10px;background:white;border-radius:8px'>" +
+            "<img src='" + flats[i].image + "' width='100%' height='150' style='object-fit:cover'><br><br>" +
+            "<b>Owner:</b> " + flats[i].ownerName + "<br>" +
+            "<b>Area:</b> " + flats[i].area + "<br>" +
+            "<b>Price:</b> ₹" + flats[i].price + "<br>" +
+            "<b>Type:</b> " + flats[i].type + "<br>" +
+            "<b>Facing:</b> " + flats[i].facing + "<br>" +
+            "<b>Contact:</b> " + flats[i].contact +
+            "</div>";
+    }
+
+    if (result === "") {
+        result = "<p>No flats available</p>";
+    }
+
+    let div = document.getElementById("flatResult");
+    if (div) {
+        div.innerHTML = result;
+    }
+}
+
+// AUTO LOAD FLATS
+if (window.location.pathname.includes("flatsale.html")) {
+    displayFlats();
+}
+
+
+// ===================== FLAT RENT =====================
+let flatRent = JSON.parse(localStorage.getItem("flatRent")) || [];
+
+function submitFlatRent() {
+
+    let ownerName = document.getElementById("ownerName").value;
+    let area = document.getElementById("area").value;
+    let rent = document.getElementById("rent").value;
+    let type = document.getElementById("type").value;
+    let facing = document.getElementById("facing").value;
+    let contact = document.getElementById("contact").value;
+    let imageFile = document.getElementById("image").files[0];
+
+    if (!ownerName || !area || !rent || !type || !facing || !contact) {
+        alert("Fill all details");
+        return;
+    }
+
+    if (!imageFile) {
+        alert("Select image");
+        return;
+    }
+
+    let reader = new FileReader();
+
+    reader.onload = function (e) {
+
+        let flat = {
+            ownerName,
+            area,
+            rent: parseInt(rent),
+            type,
+            facing,
+            contact,
+            image: e.target.result
+        };
+
+        flatRent.push(flat);
+        localStorage.setItem("flatRent", JSON.stringify(flatRent));
+
+        alert("Flat Rent Added!");
+    };
+
+    reader.readAsDataURL(imageFile);
+}
+
+// DISPLAY FLAT RENT
+function displayFlatRent() {
+
+    let result = "";
+
+    for (let i = 0; i < flatRent.length; i++) {
+
+        result +=
+            "<div style='border:1px solid #ddd;padding:10px;margin:10px;background:white;border-radius:8px'>" +
+            "<img src='" + flatRent[i].image + "' width='100%' height='150' style='object-fit:cover'><br><br>" +
+            "<b>Owner:</b> " + flatRent[i].ownerName + "<br>" +
+            "<b>Area:</b> " + flatRent[i].area + "<br>" +
+            "<b>Rent:</b> ₹" + flatRent[i].rent + "<br>" +
+            "<b>Type:</b> " + flatRent[i].type + "<br>" +
+            "<b>Facing:</b> " + flatRent[i].facing + "<br>" +
+            "<b>Contact:</b> " + flatRent[i].contact +
+            "</div>";
+    }
+
+    let div = document.getElementById("flatRentResult");
+    if (div) {
+        div.innerHTML = result;
+    }
+}
+
+// AUTO LOAD FLAT RENT
+if (window.location.pathname.includes("flat-tenant.html")) {
+    displayFlatRent();
+}
+body.bg {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c");
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    width: 420px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #34495e;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tenant Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="box">
+    <h2>Available Houses</h2>
+
+    <input type="text" id="searchArea" placeholder="Search by Area"><br><br>
+    <button onclick="searchHouse()">Search</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
